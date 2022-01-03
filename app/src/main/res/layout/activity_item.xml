@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemActivity">
+
+    <TextView
+        android:id="@+id/viewCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewCardSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/set"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardName" />
+
+    <TextView
+        android:id="@+id/viewCardPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/price"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardFoil" />
+
+    <TextView
+        android:id="@+id/viewCardFoil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/foil"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardRarity" />
+
+    <TextView
+        android:id="@+id/viewCardRarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/rarity"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardSet" />
+
+    <TextView
+        android:id="@+id/viewListingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/inventory"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardPrice" />
+
+    <Button
+        android:id="@+id/buttonAddWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Add to Watchlist"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPurchase"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/buttonAddCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Add to Cart"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddWL"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPurchase"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/buttonPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Purchase"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewListingDate"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/buttonRemoveWL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Remove from Watchlist"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddWL"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/buttonRemoveCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Remove from cart"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddCart"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tvCN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="NAME"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardName"
+        app:layout_constraintTop_toTopOf="@+id/viewCardName" />
+
+    <TextView
+        android:id="@+id/tvCS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="SET"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardSet"
+        app:layout_constraintTop_toTopOf="@+id/viewCardSet" />
+
+    <TextView
+        android:id="@+id/tvCR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="RARITY"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardRarity"
+        app:layout_constraintTop_toTopOf="@+id/viewCardRarity" />
+
+    <TextView
+        android:id="@+id/tvCF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="FOIL"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardFoil"
+        app:layout_constraintTop_toTopOf="@+id/viewCardFoil" />
+
+    <TextView
+        android:id="@+id/tvPriceOfCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="PRICE"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardPrice"
+        app:layout_constraintTop_toTopOf="@+id/viewCardPrice" />
+
+    <TextView
+        android:id="@+id/tvInventoryStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="STOCK"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewListingDate"
+        app:layout_constraintTop_toTopOf="@+id/viewListingDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

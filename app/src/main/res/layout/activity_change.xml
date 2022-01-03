@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeActivity">
+
+    <TextView
+        android:id="@+id/viewListingID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/id"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewListingID" />
+
+    <TextView
+        android:id="@+id/viewCardSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/set"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardName" />
+
+    <TextView
+        android:id="@+id/viewCardPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/price"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardFoil" />
+
+    <TextView
+        android:id="@+id/viewCardFoil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/foil"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardRarity" />
+
+    <TextView
+        android:id="@+id/viewCardRarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/rarity"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardSet" />
+
+    <TextView
+        android:id="@+id/viewListingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/inventory"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardPrice" />
+
+    <TextView
+        android:id="@+id/viewListingIDNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/_0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/viewListingID"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editCardName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/card_name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardName"
+        app:layout_constraintTop_toTopOf="@+id/viewCardName" />
+
+    <EditText
+        android:id="@+id/editCardSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/card_set_name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardSet"
+        app:layout_constraintTop_toTopOf="@+id/viewCardSet" />
+
+    <EditText
+        android:id="@+id/editCardRarity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/card_rarity"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardRarity"
+        app:layout_constraintTop_toTopOf="@+id/viewCardRarity" />
+
+    <EditText
+        android:id="@+id/editCardFoil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/is_the_card_a_foil"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardFoil"
+        app:layout_constraintTop_toTopOf="@+id/viewCardFoil" />
+
+    <EditText
+        android:id="@+id/editInStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/number_in_stock"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewListingDate"
+        app:layout_constraintTop_toBottomOf="@+id/viewCardPrice" />
+
+    <EditText
+        android:id="@+id/editCardPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="@string/price_of_card"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/viewCardPrice"
+        app:layout_constraintTop_toTopOf="@+id/viewCardPrice" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/add"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonModify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewListingDate" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/delete"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/buttonModify"
+        app:layout_constraintTop_toTopOf="@+id/buttonModify" />
+
+    <Button
+        android:id="@+id/buttonModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/modify"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+        app:layout_constraintTop_toTopOf="@+id/buttonAdd" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/back"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonModify" />
+</androidx.constraintlayout.widget.ConstraintLayout>
